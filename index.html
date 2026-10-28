@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Contact Manager</h1>
+      <p>Manage all your contacts in one place.</p>
+    </header>
+
+    <section class="panel">
+      <h2>Add New Contact</h2>
+      <form id="contactForm">
+        <input id="name" placeholder="Full name" required>
+        <input id="phone" type="tel" placeholder="Phone number" required>
+        <input id="email" type="email" placeholder="Email address" required>
+        <button type="submit">+ Add Contact</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <div class="toolbar">
+        <h2>My Contacts</h2>
+        <button id="sortBtn" type="button" class="secondary">
+          Sort A–Z
+        </button>
+      </div>
+      <input id="search" placeholder="Search contacts...">
+      <p id="count">0 contacts</p>
+      <div id="contactList"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
+    
